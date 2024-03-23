@@ -1,0 +1,16 @@
+h1{
+    color: red;
+    border: 10px solid black;
+}
+
+body{
+    background-color: blue;
+}
+#Verde{
+    color: rgb(0, 128, 124);
+
+}
+
+.FontGrande{
+    font-size: 89px;
+}
