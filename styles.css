@@ -1,6 +1,9 @@
 h1{
     color: red;
+    background-color: antiquewhite;
     border: 10px solid black;
+    position: sticky;
+    top: 0;
     
 }
 
@@ -16,9 +19,28 @@ body{
     font-size: 89px;
 }
 
-div{
-    width: 500px;
-    border: 9px solid green;
-    padding: 20px;
-    margin: 60px;
+#DivEntero{
+    width: 1080px;
+    border: 10px solid blue;
+
+    
 }
+#DivPrueba{
+    width: 400px;           /*ancho*/
+    height: 100px;          /*altura*/
+    border: 9px solid rgb(201, 20, 20); /*propiedades de los bordes cajita*/
+    padding: 50px;  /*espacio entre cajita y lo que esta adentro*/
+    margin:10px;   /*espacio cajita con margen de la pagina*/
+    display: inline-block; /*Pone los elementos  uno al lado del otro*/
+    
+ 
+}
+
+h5{
+    display: inline-block;      /*Te pone todo en linea*/
+    position: static;
+}
+
+
+
+
