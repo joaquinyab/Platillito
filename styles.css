@@ -1,10 +1,11 @@
 h1{
     color: red;
     border: 10px solid black;
+    
 }
 
 body{
-    background-color: rgb(52, 52, 151);
+    background-color: rgb(169, 169, 185);
 }
 #Verde{
     color: rgb(0, 128, 124);
@@ -13,4 +14,11 @@ body{
 
 .FontGrande{
     font-size: 89px;
+}
+
+div{
+    width: 500px;
+    border: 9px solid green;
+    padding: 20px;
+    margin: 60px;
 }
