@@ -14,6 +14,13 @@ h1{
     
     
 }
+#Lista{
+    display: block;
+}
+
+li{
+    display: inline-block;
+}
 
 body{
     background-color: #131313;
