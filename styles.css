@@ -11,7 +11,7 @@ body{
 .Container{
     position: fixed;
     width: 100vw;
-    height: 20vh;
+   
     z-index: 50;
     
 }
@@ -19,7 +19,7 @@ body{
 
 .NavigationBar{
     position: absolute;
-    height: 20vh;
+    height: 12vh;
     width: 100%;
     background: #06141B;
     align-content: center;
@@ -43,23 +43,70 @@ body{
     
 }
 
+.ImagenPrincipal{
+    position: relative;
+    top: 20px;
+    width: 98vw;
+    height: 50vh;
+    text-align: center;
+}
 
 img{
-    top: 20%;
+    position: absolute;
+    display: block;
+    top: 60%;
+    left: 50%;
+    margin:0;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+    
+    
+
+    width: 30%
+
 }
 
 
 
+.textoPrincipal{
+    position: relative;
+    top: 60px;
+    font-size: smaller;
+}
 
 
+
+.Imagenes{
+    position: relative;
+    width: 70vw;
+    display: flex;
+    margin-top: 50px;
+    height: 50vh;
+
+}
+
+.Imagenes img{
+    position: relative;
+    display: inline-block;
+    top: 50%;
+    left: 40%;
+    margin: 10px;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+
+}
 
 
 
 footer {
+    position: relative;
     background: #06141B;
     color: #fff;
     text-align: center;
     padding: 20px 0;
     bottom: 0;
     width: 100%;
+    height: 20vh;
 }
