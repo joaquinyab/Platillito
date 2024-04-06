@@ -40,7 +40,6 @@ body{
     display: inline-block;
     z-index: 100;
 
-    
 }
 
 .ImagenPrincipal{
@@ -63,7 +62,7 @@ img{
     
     
 
-    width: 30%
+    width: 35%
 
 }
 
@@ -90,12 +89,13 @@ img{
     position: relative;
     display: inline-block;
     top: 50%;
-    left: 40%;
+    left: 45%;
     margin: 10px;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 
-
+    width: 20%;
+    height: 50%;
 }
 
 
@@ -109,4 +109,105 @@ footer {
     bottom: 0;
     width: 100%;
     height: 20vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width:500px){
+    p{
+        font-size: 16px;
+        
+    }
+
+    .Menu li a{
+        text-decoration: none;
+        color: #CCD0CF;
+        
+        padding: 20px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 25px;
+    
+    }
+
+    .NavigationBar{
+        position: absolute;
+        height: 20vh;
+        width: 100%;
+        background: #06141B;
+        align-content: center;
+        
+    }
+
+
+
+    img{
+        position: absolute;
+        display: block;
+        top: 68%;
+        left: 50%;
+        margin:0;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    
+        width: 65%
+    
+    }
+
+
+
+    .Imagenes img{
+        position: relative;
+        display: inline-block;
+        top: 50%;
+        left: 25%;
+        margin: 10px;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    
+        width: 35%;
+        height: 50%;
+    }
+
+    
+
+
+    
 }
