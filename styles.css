@@ -28,10 +28,24 @@ body{
 
 .Menu li a{
     text-decoration: none;
+    font-weight: bold;
+    margin-left: 10px;
     color: #CCD0CF;
-    padding: 20px;
+    padding: 22px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: larger;
+
+}
+
+.Menu li a:hover{
+    text-decoration: none;
+    color:#06141B;
+    background: #4A5C6A;
+    border-radius: 20px;
+    padding: 12px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: large;
+    transition:0.2s;
 
 }
 
@@ -151,7 +165,7 @@ footer {
 
 
 
-@media only screen and (max-width:500px){
+@media only screen and (max-width:600px){
     p{
         font-size: 16px;
         
@@ -160,12 +174,13 @@ footer {
     .Menu li a{
         text-decoration: none;
         color: #CCD0CF;
-        
-        padding: 20px;
+        font-weight: bold;
+        padding: 5px;
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        font-size: 25px;
+        font-size: 18px;
     
     }
+
 
     .NavigationBar{
         position: absolute;
@@ -205,9 +220,4 @@ footer {
         width: 35%;
         height: 50%;
     }
-
-    
-
-
-    
 }
