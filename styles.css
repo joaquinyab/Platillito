@@ -323,6 +323,7 @@ footer {
         height: 100vh;
         top: 300px;
         display: flex;
+        margin-left: 10px;
         flex-direction: column;
         justify-content: center;
 
