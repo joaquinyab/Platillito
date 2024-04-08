@@ -362,7 +362,7 @@ footer {
         border-radius: 4%;
         width:180px;
         display: flex;
-        margin-left: 250px;
+        margin-left: 300px;
         
         align-items: center;
         background: #CCD0CF;
@@ -382,7 +382,8 @@ footer {
         width:180px;
         display: flex;
         align-items: center;
-        margin-left: 250px;
+        margin-left: 300px;
+        margin-top: 10px;
         background: #CCD0CF;
         
         height: 45vh;
@@ -393,7 +394,8 @@ footer {
         position: relative;
         border-radius: 5%;
         width:180px;
-        margin-left: 400px;
+        margin-left: 450px;
+        margin-top: 10px;
         display: flex;
         align-items: center;
         background: #CCD0CF;
