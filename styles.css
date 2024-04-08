@@ -40,12 +40,12 @@ body{
 .Menu li a:hover{
     text-decoration: none;
     color:#06141B;
-    background: #4A5C6A;
+    background: #fff;;
     border-radius: 20px;
     padding: 12px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: large;
-    transition:0.2s;
+    transition:0.5s;
 
 }
 
@@ -67,7 +67,7 @@ body{
     position: relative;
     top: 20px;
     width: 98vw;
-    height: 70vh;
+    height: 100vh;
     text-align: center;
     
 }
@@ -80,7 +80,7 @@ body{
     margin:0;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    filter: brightness(0.4);
+    filter: brightness(0.38);
 
     width: 101.4%;
 
@@ -90,12 +90,105 @@ body{
     position: relative;
     top: 100px;
     z-index: 150;
-    color: #ffffff;
+    color: #fff;
 }
 
 
 
+.ContenedorOpciones{
+    position: relative;
+    width: 90vw;
+    height: 60vh;
+    top: -40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+   
+    align-items: center;
+}
 
+
+.ContenedorOpciones a img{
+    
+    display: flex;
+    
+    margin-left: 105%;
+    margin-bottom: 100px;
+
+    align-items: center;
+    
+    
+    
+    width: 60px;
+}
+
+
+
+.ContenedorOpciones div:hover{
+    box-shadow: 0 15px 15px rgba(255, 255, 255, 0.4);
+    transition: 0.5s;
+    background: #fff;
+}
+
+
+
+.ContenedorResto{
+   
+
+    position: relative;
+    border-radius: 5%;
+    width:15vw;
+    display: flex;
+    margin-left: 300px;
+    align-items: center;
+    background: #CCD0CF;
+
+    
+    height: 40vh;
+}
+
+.ContenedorResto h2{
+    position: relative;
+    right: 16%;
+    top: 20px;
+}
+
+
+.ContenedorBar{
+    position: relative;
+    border-radius: 5%;
+    width:15vw;
+    display: flex;
+    align-items: center;
+    background: #CCD0CF;
+    
+    height: 40vh;
+}
+.ContenedorBar h2{
+    position: relative;
+    left: 6px;
+    top: 20px;
+}
+
+
+.ContenedorDulce{
+    position: relative;
+    border-radius: 5%;
+    width:15vw;
+    margin-right: 150px;
+    display: flex;
+    align-items: center;
+    background: #CCD0CF;
+    
+    height: 40vh;
+}
+
+.ContenedorDulce h2{
+    position: relative;
+    right: 10%;
+    top: 20px;
+}
 
 
 
@@ -117,27 +210,7 @@ body{
 
 
 
-.Imagenes{
-    position: relative;
-    width: 70vw;
-    display: flex;
-    margin-top: 50px;
-    height: 50vh;
 
-}
-
-.Imagenes img{
-    position: relative;
-    display: inline-block;
-    top: 50%;
-    left: 45%;
-    margin: 10px;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-
-    width: 20%;
-    height: 50%;
-}
 
 
 
@@ -193,13 +266,11 @@ footer {
 
 
 @media only screen and (max-width:600px){
-    p{
-        font-size: 16px;
-        
-    }
+
 
     .Menu li a{
         text-decoration: none;
+
         color: #CCD0CF;
         font-weight: bold;
         padding: 5px;
@@ -210,9 +281,10 @@ footer {
 
 
     .NavigationBar{
+        max-width: 100%;
         position: absolute;
         height: 20vh;
-        width: 100%;
+      
         background: #06141B;
         align-content: center;
         
@@ -222,15 +294,15 @@ footer {
     .ImagenPrincipal{
         position: relative;
         top: 20px;
-        width: 98vw;
+        width: 100vw;
         height: 50vh;
         text-align: center;
     }
     
-    img{
+    .ImagenPrincipal img{
         position: absolute;
         display: block;
-        height: 120vh;
+        height: 150vh;
         left: 50%;
         margin:0;
 
@@ -243,20 +315,122 @@ footer {
 
 
 
-
-
-
-
-    .Imagenes img{
+    .ContenedorOpciones{
         position: relative;
-        display: inline-block;
-        top: 50%;
-        left: 25%;
-        margin: 10px;
-        -ms-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-    
-        width: 35%;
-        height: 50%;
+        
+        width: 50vw;
+        height: 30vh;
+        top: 140px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+
+        
     }
+    
+    
+    .ContenedorOpciones a img{
+        
+        display: flex;
+        
+        margin-left: 0%;
+        margin-bottom: 60px;
+    
+        align-items: center;
+        
+        
+        
+        width: 140px;
+    }
+    
+    
+    
+    .ContenedorOpciones div:hover{
+        box-shadow: 0 15px 15px rgba(255, 255, 255, 0.4);
+        transition: 0.5s;
+        background: #fff;
+    }
+    
+    
+    
+    .ContenedorResto{
+       
+    
+        position: relative;
+        border-radius: 4%;
+        width:180px;
+        display: flex;
+        margin-left: 362px;
+        
+        align-items: center;
+        background: #CCD0CF;
+    
+        
+        height: 45vh;
+    }
+
+    h2{
+        display: none;
+
+    }
+    
+    .ContenedorBar{
+        position: relative;
+        border-radius: 5%;
+        width:180px;
+        display: flex;
+        align-items: center;
+        margin: 11px;
+        background: #CCD0CF;
+        
+        height: 45vh;
+    }
+    
+    
+    .ContenedorDulce{
+        position: relative;
+        border-radius: 5%;
+        width:180px;
+        margin-right: 135px;
+        display: flex;
+        align-items: center;
+        background: #CCD0CF;
+        
+        height: 45vh;
+    }
+
+
+
+    .ContenedorSobreNosotros{
+        position: relative;
+        top: 200px;
+        max-width: 100%;
+        height: 50vh;
+        background: #06141B;
+        
+    
+    }
+    .ContenedorSobreNosotros h1{
+        color: #CCD0CF;
+        position: absolute;
+        top: 5%; /* Posiciona el título a la mitad de la altura del contenedor */
+    
+    }
+
+
+    footer {
+        position: relative;
+        background: #06141B;
+        color: #fff;
+        text-align: center;
+        padding: 20px 0;
+        bottom: 0;
+        width: 100%;
+        height: 20vh;
+    }
+    
+
+
+
 }
