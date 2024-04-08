@@ -321,7 +321,7 @@ footer {
         
         width: 10vw;
         height: 100vh;
-        top: 250px;
+        top: 300px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -336,7 +336,7 @@ footer {
         display: flex;
         
         margin-left: 0%;
-        margin-bottom: 60px;
+        margin-bottom: 70px;
     
         align-items: center;
         
