@@ -1,0 +1,252 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    background: #4A5C6A;
+}
+
+.Container{
+    position: fixed;
+    width: 100vw;
+   
+    z-index: 250;
+    
+}
+
+
+.NavigationBar{
+    position: absolute;
+    height: 12vh;
+    width: 100%;
+    background: #06141B;
+    align-content: center;
+    
+}
+
+.Menu li a{
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 10px;
+    color: #CCD0CF;
+    padding: 22px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: larger;
+
+}
+
+.Menu li a:hover{
+    text-decoration: none;
+    color:#06141B;
+    background: #fff;;
+    border-radius: 20px;
+    padding: 12px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: large;
+    transition:0.5s;
+
+}
+
+
+.Menu li{
+    display: inline-block;
+    z-index: 100;
+
+}
+
+
+
+
+
+.GaleriaDeRestaurantes{
+    position: absolute;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-top:100px;
+    margin-left: 60px;
+    
+}
+
+.GaleriaDeRestaurantes img{
+    width: 20vw;
+    height: 20vh;
+    margin-left: 25px;
+    margin-top: 50px;
+    transition: 1s;
+    
+
+}
+
+.GaleriaDeRestaurantes img:hover{
+    width: 25vw;
+    box-shadow: 12px 6px 2px 2px  #35434d;
+    margin-left: -25px;
+    margin-top: -20px;
+    height: 25vh;
+    transition: 1.5s;
+
+}
+
+
+
+
+
+
+
+
+.GaleriaDeBares{
+    position: absolute;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-top:100px;
+    margin-left: 60px;
+    
+}
+
+.GaleriaDeBares img{
+    width: 20vw;
+    height: 20vh;
+    margin-left: 25px;
+    margin-top: 50px;
+    transition: 1s;
+    
+
+}
+
+.GaleriaDeBares img:hover{
+    width: 25vw;
+    box-shadow: 12px 6px 2px 2px  #35434d;
+    margin-left: -25px;
+    margin-top: -20px;
+    height: 25vh;
+    transition: 1.5s;
+
+}
+
+
+
+
+
+
+
+.GaleriaDeMeriendas{
+    position: absolute;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-top:100px;
+    margin-left: 60px;
+    
+}
+
+.GaleriaDeMeriendas img{
+    width: 20vw;
+    height: 20vh;
+    margin-left: 25px;
+    margin-top: 50px;
+    transition: 1s;
+    
+
+}
+
+.GaleriaDeMeriendas img:hover{
+    width: 25vw;
+    box-shadow: 12px 6px 2px 2px  #35434d;
+    margin-left: -25px;
+    margin-top: -20px;
+    height: 25vh;
+    transition: 1.5s;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width:500px){
+    .GaleriaDeRestaurantes{
+        position: absolute;
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        margin-top:80px;
+        margin-left: 30px;
+        
+    }
+    
+    .GaleriaDeRestaurantes img{
+        width: 30vw;
+        height: 20vh;
+        margin-left: 20px;
+        margin-top: 50px;
+        transition: 1s;
+        
+    
+    }
+    
+
+    
+    .GaleriaDeBares{
+        position: absolute;
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        margin-top:80px;
+        margin-left: 30px;
+        
+    }
+    
+    .GaleriaDeBares img{
+        width: 30vw;
+        height: 20vh;
+        margin-left: 20px;
+        margin-top: 50px;
+        transition: 1s;
+        
+    
+    }
+    
+
+    
+    
+    .GaleriaDeMeriendas{
+        position: absolute;
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        margin-top:80px;
+        margin-left: 30px;
+        
+    }
+    
+    .GaleriaDeMeriendas img{
+        width: 30vw;
+        height: 20vh;
+        margin-left: 20px;
+        margin-top: 50px;
+        transition: 1s;
+        
+    
+    }
+    
+    .GaleriaDeMeriendas img:hover{
+        width: 25vw;
+        box-shadow: 12px 6px 2px 2px  #35434d;
+        margin-left: -25px;
+        margin-top: -20px;
+        height: 25vh;
+        transition: 1.5s;
+    
+    }
+
+}
