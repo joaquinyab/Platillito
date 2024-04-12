@@ -87,109 +87,163 @@ body{
 
 }
 
+.ImagenPrincipal img::selection{
+    position: absolute;
+    display: block;
+    top: 25%;
+    left: 50%;
+    margin:0;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    filter: brightness(0.38);
+
+    width: 101.4%;
+    background-color: transparent;
+
+}
+
 .TituloWeb{
     position: relative;
     top: 100px;
     z-index: 150;
+    font-size: 90px;
     color: #fff;
+}
+
+.TituloWeb::selection{
+    background-color: transparent;
+    position: relative;
+    top: 100px;
+    z-index: 150;
+    font-size: 90px;
+    
+   
+}
+
+
+.Subtitulo{
+    position: relative;
+    color: white;
+    top: 120px;
+    font-weight: bold;
+    z-index: 150;
+}
+
+.Subtitulo::selection{
+    position: relative;
+    color: white;
+    background: transparent;
+    top: 120px;
+    font-weight: bold;
+    z-index: 150;
 }
 
 
 
 .ContenedorOpciones{
-    position: relative;
-    width: 90vw;
-    height: 60vh;
-    top: -10px;
+    display: flex;
+   
+   
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh;
+
+}
+
+.ContenedorOpciones .Opciones{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    
-   
     align-items: center;
+    margin-top: 10px;
+    flex-wrap: wrap;
+    padding: 10px;
+
 }
 
 
-.ContenedorOpciones a img{
-    
+
+
+.ContenedorOpciones .Opciones div{
+    width: 20vw;
+    height: 50vh;
+    margin-left: 60px;
+    margin-bottom: 10px; /* Espacio entre los elementos */
+    padding: 10px; /* Añadir espaciado interno para mejor apariencia */
+    border: 1px solid #ccc; /* Añadir un borde para diferenciar las opciones */
+    border-radius: 10px; /* Añadir esquinas redondeadas */
+    background: #fff;
     display: flex;
-    
-    margin-left: 105%;
-    margin-bottom: 120px;
-
+    justify-content: center;
     align-items: center;
-    
-    
-    
-    width: 60px;
+   
 }
 
 
-
-.ContenedorOpciones div:hover{
+.ContenedorOpciones .Opciones div:hover{
+    width: 20vw;
+    height: 50vh;
+    margin-left: 60px;
     box-shadow: 0 15px 15px rgba(255, 255, 255, 0.4);
     transition: 0.5s;
     background: #fff;
-}
-
-
-
-.ContenedorResto{
+    margin-bottom: 10px; /* Espacio entre los elementos */
+    padding: 10px; /* Añadir espaciado interno para mejor apariencia */
+    border: 1px solid #ccc; /* Añadir un borde para diferenciar las opciones */
+    border-radius: 10px; /* Añadir esquinas redondeadas */
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
    
+}
 
-    position: relative;
-    border-radius: 5%;
-    width:15vw;
+.ContenedorOpciones .Opciones div img{
+    width: 5vw;
     display: flex;
-    margin-left: 300px;
-    align-items: center;
-    background: #CCD0CF;
+    
+    
+    
+    
+
 
     
-    height: 40vh;
-}
-
-.ContenedorResto h2{
-    position: relative;
-    right: 16%;
-    top: 20px;
 }
 
 
-.ContenedorBar{
-    position: relative;
-    border-radius: 5%;
-    width:15vw;
+
+#carouselExampleAutoplaying{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    width: 20vw;
+    display: flex;
+    margin-left: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+.Carrousels{
     display: flex;
     align-items: center;
-    background: #CCD0CF;
-    
-    height: 40vh;
+    justify-content: center;
+    margin-right: 20px;
+
 }
-.ContenedorBar h2{
-    position: relative;
-    left: 6px;
-    top: 20px;
+
+.carrousel-inner{
+    border: 2px solid #333; /* Borde sólido */
+    border-radius: 10px; /* Bordes redondeados */
 }
 
 
-.ContenedorDulce{
-    position: relative;
-    border-radius: 5%;
-    width:15vw;
-    margin-right: 150px;
-    display: flex;
-    align-items: center;
-    background: #CCD0CF;
-    
-    height: 40vh;
-}
 
-.ContenedorDulce h2{
-    position: relative;
-    right: 10%;
-    top: 20px;
-}
+
+
+
 
 
 
@@ -197,7 +251,7 @@ body{
     position: relative;
     top: 10px;
     max-width: 100%;
-    height: 50vh;
+    height: 100vh;
     background: #06141B;
     box-shadow: 15px 15px 15px 15px rgba(26, 92, 213, 0.4);
     
@@ -207,15 +261,39 @@ body{
 #ContenedorSobreNosotros h1{
     color: #CCD0CF;
     position: absolute;
-    top: 5%; /* Posiciona el título a la mitad de la altura del contenedor */
+    top: 15%; /* Posiciona el título a la mitad de la altura del contenedor */
+
+}
+
+#ContenedorSobreNosotros .ContainerTextoSobreNosotros{
+
+    
+    display: flex;
+    position: absolute;
+    margin-top: 15%;
+    height: 45vh;
+    width: 80vw;
+    color: white;
+
+}
+
+#ContenedorSobreNosotros .ContainerTextoSobreNosotros .TextoSobreNosotros{
+    font-size: 20px;
+    text-align: justify;
+
+
 
 }
 
 
+#ContenedorSobreNosotros .ContainerTextoSobreNosotros .TextoSobreNosotros::selection{
+    font-size: 15px;
+    text-align: justify;
+    background-color: transparent;
 
 
 
-
+}
 
 footer {
     position: relative;
@@ -255,6 +333,17 @@ footer {
 
 
 
+/* stylesResponsive.css */
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -270,6 +359,10 @@ footer {
 
 @media only screen and (max-width:500px){
 
+    .TituloWeb{
+        margin-top: 80px;
+        font-size: 50px;
+    }
 
     .Menu li a{
         text-decoration: none;
@@ -278,7 +371,7 @@ footer {
         font-weight: bold;
         padding: 5px;
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        font-size: 18px;
+        font-size: 20px;
     
     }
 
@@ -319,99 +412,68 @@ footer {
 
 
     .ContenedorOpciones{
-        position: relative;
-        
-        
-        width: 5vw;
-        height: 50vh;
-        top: 300px;
         display: flex;
-        margin-left:5px;
+        margin-top: 200px;
         flex-direction: column;
+        display: flex;
+        flex-direction: column; 
+        margin-right: 35px;
+        justify-content: center; 
+        align-items: center; 
+        height: 100vh;
+
+    }
+
+    .ContenedorOpciones .Opciones{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         justify-content: center;
+        
+        margin-top: 10px;
+        padding: 10px;
 
+    }
 
-        
-    }
-    
-    
-    .ContenedorOpciones a img{
-        
-        display: flex;
-        
-        margin-left: 20px;
-        margin-bottom: 70px;
-    
-        align-items: center;
-        
-        
-        
-        width: 140px;
-    }
-    
-    
-    
-    .ContenedorOpciones div:hover{
-        box-shadow: 0 15px 15px rgba(255, 255, 255, 0.4);
-        transition: 0.5s;
+    .ContenedorOpciones .Opciones div{
+        width: 50vw;
+        height: 30vh;
+        margin-bottom: 10px; /* Espacio entre los elementos */
+        padding: 10px; /* Añadir espaciado interno para mejor apariencia */
+        border: 1px solid #ccc; /* Añadir un borde para diferenciar las opciones */
+        border-radius: 5px; /* Añadir esquinas redondeadas */
         background: #fff;
-    }
-    
-    
-    
-    .ContenedorResto{
-       
-    
-        position: relative;
-        border-radius: 4%;
-        width:180px;
         display: flex;
-        margin-left: 300px;
-        
+        justify-content: center;
         align-items: center;
-        background: #CCD0CF;
-    
-        
-        height: 45vh;
     }
 
-    h2{
-        display: none;
 
-    }
-    
-    .ContenedorBar{
-        position: relative;
-        border-radius: 5%;
-        width:180px;
-        display: flex;
-        align-items: center;
-        margin-left: 300px;
-        margin-top: 10px;
-        background: #CCD0CF;
+    .ContenedorOpciones .Opciones div img{
+        width: 20vw;
+
         
-        height: 45vh;
     }
+
+
+
+
+
+
+
+
     
-    
-    .ContenedorDulce{
-        position: relative;
-        border-radius: 5%;
-        width:180px;
-        margin-left: 450px;
-        margin-top: 10px;
-        display: flex;
-        align-items: center;
-        background: #CCD0CF;
-        
-        height: 45vh;
-    }
+
+
+
+
+
 
 
 
     #ContenedorSobreNosotros{
         position: relative;
-        top: 520px;
+        top: 60px;
         max-width: 100%;
         height: 70vh;
         background: #06141B;
@@ -421,9 +483,30 @@ footer {
     .ContenedorSobreNosotros h1{
         color: #CCD0CF;
         position: relative;
-        top: 20%; /* Posiciona el título a la mitad de la altura del contenedor */
+        top: 20%; 
     
     }
+
+
+    #ContenedorSobreNosotros .ContainerTextoSobreNosotros{
+
+    
+        display: flex;
+        position: absolute;
+        margin-top: 30%;
+        height: 45vh;
+        color: white;
+    
+    }
+    
+    #ContenedorSobreNosotros .ContainerTextoSobreNosotros .TextoSobreNosotros{
+        font-size: 15px;
+        text-align: justify;
+    
+    
+    
+    }
+
 
     footer{
         display: none;
