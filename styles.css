@@ -269,6 +269,7 @@ body{
 #ContenedorSobreNosotros h1{
     color: #CCD0CF;
     position: absolute;
+    margin-left: 15px;
     top: 15%; /* Posiciona el título a la mitad de la altura del contenedor */
 
 }
@@ -280,6 +281,7 @@ body{
     position: absolute;
     margin-top: 15%;
     height: 45vh;
+    margin-left: 15px;
     width: 80vw;
     color: white;
 
@@ -341,11 +343,63 @@ footer {
 
 }
 
+.btn {
+    background: #35414b;
+    border: #061117;
+    width: 15vw;
+}
+
+.btn:hover {
+    background: #fff;
+    color: black;
+    box-shadow: 2px 8px 2px rgb(123, 110, 110);
+}
+
+
+.RealizadaPor{
+    position: relative;
+    margin-top: 80px;
+    font-size: 12px;
+    margin-left: 72%;
+}
+
+
+
+.RedesSociales{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+
+    height: 70px;
+    width: 40vw;
+    bottom: 15px;
+
+}
 
 
 
 
 
+.RedesSociales img{
+    margin-left: 40px;
+    position: relative;
+    width: 3vw;
+    filter: brightness(0);
+}
+
+.RedesSociales img:hover{
+    transition: 1s;
+    filter: none;
+
+}
+
+
+h5{
+    position: absolute;
+    margin-left: 40px;
+}
 
 
 /**************************************************************************************/
@@ -357,7 +411,7 @@ footer {
 
 
 
-@media only screen and (max-width:500px){
+@media only screen and (max-width:600px){
 
     .Menu .OpcionRecomendar{
         display: none;
@@ -516,8 +570,19 @@ footer {
         border-radius: 10px;
     }
 
-    footer{
+    .RealizadaPor{
         display: none;
     }
+
+    h5{
+        bottom: 40%;
+    }
+
+    .RedesSociales{
+        position: absolute;
+        bottom: 30%;
+    }
+
+
 
 }
