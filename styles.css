@@ -506,18 +506,7 @@ h5{
         align-items: center;
     }
 
-    .ContenedorOpciones .Opciones div:hover{
-        width: 50vw;
-        height: 30vh;
-        margin-bottom: 10px; /* Espacio entre los elementos */
-        padding: 10px; /* Añadir espaciado interno para mejor apariencia */
-        border: 1px solid #ccc; /* Añadir un borde para diferenciar las opciones */
-        border-radius: 5px; /* Añadir esquinas redondeadas */
-        background: #fff;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+
 
 
     .ContenedorOpciones .Opciones div img{
@@ -536,10 +525,12 @@ h5{
         
     
     }
-    .ContenedorSobreNosotros h1{
+    #ContenedorSobreNosotros h1{
         color: #CCD0CF;
-        position: relative;
-        top: 20%; 
+        position:absolute;
+        margin-left: 9px;
+        margin-top: -30;
+        
     
     }
 
@@ -548,7 +539,8 @@ h5{
 
     
         display: flex;
-        position: absolute;
+        flex-wrap: wrap;
+        position: relative;
         margin-top: 30%;
         height: 45vh;
         color: white;
@@ -558,9 +550,7 @@ h5{
     #ContenedorSobreNosotros .ContainerTextoSobreNosotros .TextoSobreNosotros{
         font-size: 15px;
         text-align: justify;
-    
-    
-    
+
     }
 
 
@@ -575,12 +565,12 @@ h5{
     }
 
     h5{
-        bottom: 40%;
+        bottom: 25%;
     }
 
     .RedesSociales{
         position: absolute;
-        bottom: 30%;
+        bottom: 15%;
     }
 
 
