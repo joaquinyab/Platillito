@@ -23,19 +23,39 @@ body{
     width: 100%;
     background: #06141B;
     align-content: center;
+
+    
     
 }
 
+.Opciones a {
+    text-decoration: none;
+    color: #26292b;
+}
+
+
+.Menu{
+    margin-top: 10px;
+}
 .Menu li a{
     text-decoration: none;
+    
     font-weight: bold;
     margin-left: 10px;
     color: #CCD0CF;
-    padding: 22px;
+    padding: 10px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: larger;
+    font-size: large;
+    
 
 }
+
+.Menu .OpcionRecomendar a{
+    margin-left: 360px;
+    color: #ffffff;
+    
+}
+
 
 .Menu li a:hover{
     text-decoration: none;
@@ -55,11 +75,6 @@ body{
     z-index: 100;
 
 }
-
-
-
-
-
 
 
 
@@ -185,7 +200,7 @@ body{
     width: 20vw;
     height: 50vh;
     margin-left: 60px;
-    box-shadow: 0 15px 15px rgba(255, 255, 255, 0.4);
+    box-shadow: 15px 15px 15px rgba(255, 255, 255, 0.4);
     transition: 0.5s;
     background: #fff;
     margin-bottom: 10px; /* Espacio entre los elementos */
@@ -203,13 +218,10 @@ body{
     width: 5vw;
     display: flex;
     
-    
-    
-    
-
 
     
 }
+
 
 
 
@@ -221,6 +233,7 @@ body{
     margin-left: 30px;
     justify-content: center;
     align-items: center;
+    border-radius: 10px;
 }
 
 
@@ -231,6 +244,7 @@ body{
     align-items: center;
     justify-content: center;
     margin-right: 20px;
+    border-radius: 10px;
 
 }
 
@@ -238,12 +252,6 @@ body{
     border: 2px solid #333; /* Borde sólido */
     border-radius: 10px; /* Bordes redondeados */
 }
-
-
-
-
-
-
 
 
 
@@ -295,6 +303,12 @@ body{
 
 }
 
+.carousel-item img{
+    height: 45vh;
+    width: 30vw;
+    border-radius: 10px;
+}
+
 footer {
     position: relative;
     background: #06141B;
@@ -303,7 +317,28 @@ footer {
     padding: 20px 0;
     bottom: 0;
     width: 100%;
-    height: 20vh;
+    margin-top: 20px;
+    height: 90vh;
+
+    
+}
+
+
+.mb-3{
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+    
+    margin-left: 25% ;
+}
+
+.form-control{
+    background: #CCD0CF;
+    margin-bottom: 20px;
+
 }
 
 
@@ -313,44 +348,9 @@ footer {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* stylesResponsive.css */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/**************************************************************************************/
+/************************************* RESPONSIVE ************************************/
+/*************************************************************************************/
 
 
 
@@ -358,6 +358,10 @@ footer {
 
 
 @media only screen and (max-width:500px){
+
+    .Menu .OpcionRecomendar{
+        display: none;
+    }
 
     .TituloWeb{
         margin-top: 80px;
@@ -448,27 +452,25 @@ footer {
         align-items: center;
     }
 
+    .ContenedorOpciones .Opciones div:hover{
+        width: 50vw;
+        height: 30vh;
+        margin-bottom: 10px; /* Espacio entre los elementos */
+        padding: 10px; /* Añadir espaciado interno para mejor apariencia */
+        border: 1px solid #ccc; /* Añadir un borde para diferenciar las opciones */
+        border-radius: 5px; /* Añadir esquinas redondeadas */
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
 
     .ContenedorOpciones .Opciones div img{
         width: 20vw;
 
         
     }
-
-
-
-
-
-
-
-
-    
-
-
-
-
-
-
 
 
     #ContenedorSobreNosotros{
@@ -508,12 +510,14 @@ footer {
     }
 
 
+    .carousel-item img{
+        height: 20vh;
+        width: 80vw;
+        border-radius: 10px;
+    }
+
     footer{
         display: none;
     }
-
-    
-
-
 
 }

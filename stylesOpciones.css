@@ -71,7 +71,7 @@ body{
 
 .GaleriaDeRestaurantes img{
     width: 20vw;
-    height: 20vh;
+    height: 30vh;
     margin-left: 25px;
     margin-top: 50px;
     transition: 1s;
@@ -84,7 +84,7 @@ body{
     box-shadow: 12px 6px 2px 2px  #35434d;
     margin-left: -25px;
     margin-top: -20px;
-    height: 25vh;
+    height: 35vh;
     transition: 1.5s;
 
 }
