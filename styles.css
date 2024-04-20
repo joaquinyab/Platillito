@@ -213,7 +213,7 @@ body{
     color: #CCD0CF;
     position: absolute;
     margin-left: 15px;
-    top: 15%; /* Posiciona el título a la mitad de la altura del contenedor */
+    top: 15%; 
 }
 
 #ContenedorSobreNosotros .ContainerTextoSobreNosotros{    

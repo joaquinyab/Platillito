@@ -5,7 +5,7 @@
 
 
 body{
-    background: #4A5C6A;
+    background: #253745;
 }
 
 .Container{
@@ -58,36 +58,117 @@ body{
 
 
 
-
-
-.GaleriaDeRestaurantes{
+.Galeria{
+  
     position: absolute;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    margin-top:100px;
-    margin-left: 60px;
+    top: 120px;
     
+    width: 98.3vw;
 }
 
-.GaleriaDeRestaurantes img{
-    width: 20vw;
-    height: 30vh;
+
+.Galeria .GaleriaRestaurantes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+
+.Restaurante img{
+    width: 225px;
+    border-radius: 6px 0px 0px 6px;
+    
+    height: 224px;
+    
+   
+}
+
+.Galeria .GaleriaRestaurantes .Restaurante{
+    display: flex;
+    background-color: #4A5C6A;
+    font-size: small;
+    width: 70vw;
+    height: 40vh;
+    align-items: center;
+    border-radius: 6px;
+    margin-top: 20px; 
+}
+
+.Galeria .GaleriaRestaurantes div p {
     margin-left: 25px;
-    margin-top: 50px;
-    transition: 1s;
+    position: relative;
+}
+
+.Galeria .GaleriaRestaurantes div h3{
+    margin-bottom: 125px;
+    position: absolute;
+    margin-left: 250px;
+    width: 190px;
+
     
+}
+
+#capitan img, #napule img,#SanCarlos img{
+    width: 40vw;
+}
+
+#napule .puntuacion,#capitan .puntuacion, #SanCarlos .puntuacion{
+    margin-left: 250px;
+    width: 31vw;
+}
+
+
+
+
+.Restaurante .puntuacion{
+    display: flex;
+    position: absolute;
+    align-items: start;
+    flex-direction: column;
+    
+    height: 10vh;
+    margin-bottom: 40px;
+    margin-left: 17.8%;
+    width: 20vw;
+}
+
+.Galeria .GaleriaRestaurantes .Restaurante .Ubicacion {
+    position: relative;
+    width: 20vw;
+    display: flex;
+    margin-top: 120px;
+    margin-right: 2px;
+    height: 15vh;
+    border: 2px solid black;
+
 
 }
 
-.GaleriaDeRestaurantes img:hover{
-    width: 25vw;
-    box-shadow: 12px 6px 2px 2px  #35434d;
-    margin-left: -25px;
-    margin-top: -20px;
-    height: 35vh;
-    transition: 1.5s;
+
+.Galeria .GaleriaRestaurantes .Restaurante .Ubicacion img{
+    width: 10vw;
+    height: 15vh;
+    border-radius: 0;
+
+
 
 }
+
+#capitan .Ubicacion img,#napule .Ubicacion img,#SanCarlos .Ubicacion img{
+    width: 10vw;
+    height: 15vh;
+    border-radius: 0;
+
+}
+
+
+
+
+
+
+
+
+
 
 
 
