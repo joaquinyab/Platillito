@@ -181,7 +181,56 @@
 
 
     <footer id="Footer">
+
         <h1>Recomendanos Lugares!</h1>
+        <br>
+        
+        <form>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label"></label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                    placeholder="Direccion de mail">
+            </div>
+            <div class="mb-3">
+                <label for="exampleForminputTextarea1" class="form-label"></label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                    placeholder="Contanos un poco sobre tu recomendacion, decinos como se llama y la direccion!"></textarea>
+            </div>
+            <button onclick="validarCampos()" class="btn btn-primary" type="button">Enviar</button>
+        
+        
+            <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+            <script>
+                function validarCampos() {
+                    var email = document.getElementById("exampleInputEmail1").value;
+                    var recomendacion = document.getElementById("exampleFormControlTextarea1").value;
+        
+                    if (email.trim() === "" || recomendacion.trim() === "") {
+                        Swal.fire({
+                            title: "Error",
+                            text: "Por favor completa todos los campos",
+                            icon: "error"
+                        });
+                    } else {
+                        showAlert();
+                    }
+                }
+        
+                function showAlert() {
+                    Swal.fire({
+                        title: "Gracias por tu recomendacion!",
+                        text: "Estaremos al tanto de este sitio para futuras visitas!",
+                        icon: "success"
+                    });
+                }
+            </script>
+        </form>
+        
+
+
+
+
+       <!-- <h1>Recomendanos Lugares!</h1>
         <br>
 
         <form>
@@ -195,8 +244,9 @@
                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
                     placeholder="Contanos un poco sobre tu recomendacion, decinos como se llama y la direccion!"></textarea>
             </div>
-            <button onclick="showAlert()" href="Footer" type="submit" class="btn btn-primary">Enviar</button>
+            <button onclick="showAlert()" class="btn btn-primary" type="button">Enviar</button>
 
+            
             <script>
                 function showAlert() {
                     Swal.fire({
@@ -206,10 +256,11 @@
                     });
                 }
             </script>
+            
 
 
 
-        </form>
+        </form>-->
 
 
 
