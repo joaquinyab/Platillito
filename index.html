@@ -11,6 +11,8 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
 
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
 
 
     <link rel="stylesheet" href="stylesResponsive.css">
@@ -193,7 +195,19 @@
                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
                     placeholder="Contanos un poco sobre tu recomendacion, decinos como se llama y la direccion!"></textarea>
             </div>
-            <button href="Footer" type="submit" class="btn btn-primary">Enviar</button>
+            <button onclick="showAlert()" href="Footer" type="submit" class="btn btn-primary">Enviar</button>
+
+            <script>
+                function showAlert() {
+                    Swal.fire({
+                        title: "¡Buen trabajo!",
+                        text: "¡Hiciste clic en el botón!",
+                        icon: "success"
+                    });
+                }
+            </script>
+
+
 
         </form>
 
