@@ -196,6 +196,7 @@
                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
                     placeholder="Contanos un poco sobre tu recomendacion, decinos como se llama y la direccion!"></textarea>
             </div>
+
             <button onclick="validarCampos()" class="btn btn-primary" type="button">Enviar</button>
         
         
@@ -221,51 +222,18 @@
                         title: "Gracias por tu recomendacion!",
                         text: "Estaremos al tanto de este sitio para futuras visitas!",
                         icon: "success"
+                        
                     });
+                    var email = document.getElementById("exampleInputEmail1").value = "";
+                    var recomendacion = document.getElementById("exampleFormControlTextarea1").value = ""
                 }
             </script>
         </form>
         
 
-
-
-
-       <!-- <h1>Recomendanos Lugares!</h1>
-        <br>
-
-        <form>
-            <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label"></label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                    placeholder="Direccion de mail">
-            </div>
-            <div class="mb-3">
-                <label for="exampleForminputTextarea1" class="form-label"></label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
-                    placeholder="Contanos un poco sobre tu recomendacion, decinos como se llama y la direccion!"></textarea>
-            </div>
-            <button onclick="showAlert()" class="btn btn-primary" type="button">Enviar</button>
-
-            
-            <script>
-                function showAlert() {
-                    Swal.fire({
-                        title: "¡Buen trabajo!",
-                        text: "¡Hiciste clic en el botón!",
-                        icon: "success"
-                    });
-                }
-            </script>
-            
-
-
-
-        </form>-->
-
-
-
-
-
+    <!-------------------------------------------------------------------------------->
+    <!-------------------------------------------------------NUESTRA REDES---------------------->
+    <!------------------------------------------------------------------------------------>
 
 
         <h5>Nuestras redes</h5>

@@ -8,6 +8,9 @@ body {
     background: #253745;
 }
 
+
+
+
 .Container {
     position: fixed;
     width: 100vw;
@@ -16,6 +19,9 @@ body {
 
 }
 
+li{
+    color: #253745;
+}
 
 .NavigationBar {
     position: absolute;
@@ -41,7 +47,7 @@ body {
     text-decoration: none;
     color: #06141B;
     background: #fff;
-    ;
+    
     border-radius: 20px;
     padding: 12px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -52,10 +58,33 @@ body {
 
 
 .Menu li {
-    display: inline-block;
+    
     z-index: 100;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 
 }
+
+
+input {
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    margin-left: 68.2%;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+  /* Estilo para cuando el input está enfocado */
+input:focus {
+    border-color: dodgerblue;
+}
+
+::placeholder{
+    font-size: small;
+}
+
 
 
 
@@ -124,7 +153,7 @@ body {
 #napule .puntuacion,
 #capitan .puntuacion,
 #SanCarlos .puntuacion {
-    margin-left: 250px;
+    margin-left: 17.8%;
     width: 31vw;
 }
 
@@ -502,7 +531,7 @@ body {
         align-items: center;
         flex-wrap: nowrap;
         justify-content: center;
-        margin-left: 15%;
+        margin-left: 10%;
     
     }
     
@@ -554,15 +583,14 @@ body {
     }
 
 
-
-
     #napule .puntuacion,
     #capitan .puntuacion,
-    #SanCarlos .puntuacion {
+    #SanCarlos .puntuacion{
         margin-left: 1%;
-        
-    
- }
+    }
+
+
+
     .Restaurante .puntuacion {
         display: flex;
         position: absolute;
@@ -575,8 +603,8 @@ body {
     }
 
     .GaleriaResto .GaleriaRestaurantes .Restaurante  .puntuacion p{
-        font-size: 25px;
-        margin-bottom: 1%;
+        font-size: 15px;
+        bottom: 120%;
     }
 
 
