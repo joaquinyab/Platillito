@@ -74,11 +74,15 @@ input {
     border-radius: 5px;
     margin-left: 68.2%;
     font-size: 16px;
-    transition: border-color 0.3s ease;
+    
+    
 }
   /* Estilo para cuando el input está enfocado */
-input:focus {
-    border-color: dodgerblue;
+input:hover {
+    width: 20%;
+    margin-left: 64.2%;
+    transition: 0.9s;
+    
 }
 
 ::placeholder{
@@ -188,9 +192,13 @@ input:focus {
 .GaleriaResto .GaleriaRestaurantes .Restaurante .Ubicacion img {
     width: 10vw;
     height: 15vh;
-    border-radius: 0;
+    
+}
 
-
+.GaleriaResto .GaleriaRestaurantes .Restaurante .Ubicacion img:hover {
+    width: 12vw;
+    height: 17vh;
+    transition: 1s;
 
 }
 
@@ -199,7 +207,7 @@ input:focus {
 #SanCarlos .Ubicacion img {
     width: 10vw;
     height: 15vh;
-    border-radius: 0;
+    
 
 }
 
@@ -334,6 +342,13 @@ input:focus {
 
 }
 
+.ContainerBares .GaleriaBares .Bares .Ubicacion img:hover {
+    width: 12vw;
+    height: 17vh;
+    transition: 1s;
+
+}
+
 #capitan1 .Ubicacion img,
 #napule1 .Ubicacion img,
 #SanCarlos1 .Ubicacion img {
@@ -460,9 +475,13 @@ input:focus {
 .ContainerMeriendas .GaleriaMeriendas .Meriendas .Ubicacion img {
     width: 10vw;
     height: 15vh;
-    border-radius: 0;
+   
+}
 
-
+.ContainerMeriendas .GaleriaMeriendas .Meriendas .Ubicacion img:hover {
+    width: 12vw;
+    height: 17vh;
+    transition: 1s;
 
 }
 
@@ -530,6 +549,7 @@ input:focus {
         flex-direction: column;
         align-items: center;
         flex-wrap: nowrap;
+       
         justify-content: center;
         margin-left: 10%;
     
@@ -550,6 +570,7 @@ input:focus {
         font-size: small;
         width: 70vw;
         height: 30vh;
+
         flex-wrap: nowrap;
         border-radius: 6px;
         
@@ -608,6 +629,110 @@ input:focus {
     }
 
 
+    li{
+        display: flex;
+        
+    }
+
+    input{
+        display: none;
+    }
+
+
+
+    .ContainerBares .GaleriaBares {
+
+        position: absolute;
+        top: 120px;
+    
+        width: 90.3vw;
+        
+    }
+    
+    
+    .ContainerBares .GaleriaBares {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: nowrap;
+       
+        justify-content: center;
+        margin-left: 10%;
+    
+    }
+    
+    .Bares img {
+        width: 70vw;
+        border-radius: 6px 0px 0px 6px;
+    
+        height: 14vh;
+    
+    
+    }
+    
+    .ContainerBares .GaleriaBares .Bares {
+        display: inline-block;
+        background-color: #4A5C6A;
+        font-size: small;
+        width: 70vw;
+        height: 30vh;
+
+        flex-wrap: nowrap;
+        border-radius: 6px;
+        
+    }
+    
+    .ContainerBares .GaleriaBares div p {
+        margin-left: 10px;
+        font-size: 10px;
+        margin-top: 15%;
+        position: relative;
+    }
+    
+    .ContainerBares .GaleriaBares div h3 {
+       
+        margin-bottom: 125px;
+        position: absolute;
+        margin-left: 1%;
+        font-size: large;
+    
+    
+    }
+    
+    
+    #napule1 img,
+    #SanCarlos1 img {
+        width: 70vw;
+    }
+    
+    .ImagenUbicacion{
+        display: none;
+    }
+
+
+    #napule1 .puntuacion,
+    
+    #SanCarlos1 .puntuacion{
+        margin-left: 1%;
+    }
+
+
+
+    .Bares .puntuacion {
+        display: flex;
+        position: absolute;
+        align-items: start;
+        flex-direction: column;
+        height: 10vh;
+        
+        margin-left: 1%;
+        width: 20vw;
+    }
+
+    .ContainerBares .GaleriaBares .Bares  .puntuacion p{
+        font-size: 15px;
+        bottom: 120%;
+    }
 
 
 }
