@@ -36,11 +36,14 @@ body{
     padding: 10px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: large;
+    border-radius: 20px;
+    transition:0.2s;
 }
 
 .Menu .OpcionRecomendar a{
-    margin-left: 360px;
+    margin-left:440px;
     color: #ffffff;
+   
 }
 
 .Menu li a:hover{
@@ -55,6 +58,7 @@ body{
 }
 
 .Menu li{
+    
     display: inline-block;
     z-index: 100;
 }
@@ -306,7 +310,9 @@ footer {
     margin-left: 40px;
     position: relative;
     width: 3vw;
+    
     filter: brightness(0);
+    transition: 0.5s;
 }
 
 .RedesSociales img:hover{
@@ -337,12 +343,13 @@ h5{
     }
 
     .Menu li a{
-        text-decoration: none;
+        display: flex;
+        text-decoration:underline;
         color: #CCD0CF;
         font-weight: bold;
         padding: 5px;
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        font-size: 20px;
+        font-size: 17px;
     }
 
     .NavigationBar{

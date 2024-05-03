@@ -640,14 +640,6 @@ input:hover {
 
 
 
-    .ContainerBares .GaleriaBares {
-
-        position: absolute;
-        top: 120px;
-    
-        width: 90.3vw;
-        
-    }
     
     
     .ContainerBares .GaleriaBares {
@@ -655,9 +647,9 @@ input:hover {
         flex-direction: column;
         align-items: center;
         flex-wrap: nowrap;
-       
+        
         justify-content: center;
-        margin-left: 10%;
+        
     
     }
     
@@ -700,19 +692,21 @@ input:hover {
     }
     
     
-    #napule1 img,
-    #SanCarlos1 img {
+    #napule2 img,
+    #SanCarlos2 img {
         width: 70vw;
     }
     
-    .ImagenUbicacion{
+
+    .ContainerBares .GaleriaBares .Bares .Ubicacion{
         display: none;
     }
 
 
-    #napule1 .puntuacion,
+
+    #napule2 .puntuacion,
     
-    #SanCarlos1 .puntuacion{
+    #SanCarlos2 .puntuacion{
         margin-left: 1%;
     }
 
@@ -730,6 +724,101 @@ input:hover {
     }
 
     .ContainerBares .GaleriaBares .Bares  .puntuacion p{
+        font-size: 15px;
+        bottom: 120%;
+    }
+
+
+
+
+
+
+
+
+
+
+    .ContainerMeriendas .GaleriaMeriendas {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: nowrap;
+        
+        justify-content: center;
+        
+    
+    }
+    
+    .Meriendas img {
+        width: 70vw;
+        border-radius: 6px 0px 0px 6px;
+    
+        height: 14vh;
+    
+    
+    }
+    
+    .ContainerMeriendas .GaleriaMeriendas .Meriendas {
+        display: inline-block;
+        background-color: #4A5C6A;
+        font-size: small;
+        width: 70vw;
+        height: 30vh;
+
+        flex-wrap: nowrap;
+        border-radius: 6px;
+        
+    }
+    
+    .ContainerMeriendas .GaleriaMeriendas div p {
+        margin-left: 10px;
+        font-size: 10px;
+        margin-top: 15%;
+        position: relative;
+    }
+    
+    .ContainerMeriendas .GaleriaMeriendas div h3 {
+       
+        margin-bottom: 125px;
+        position: absolute;
+        margin-left: 1%;
+        font-size: large;
+    
+    
+    }
+    
+    
+    #napule1 img,
+    #SanCarlos1 img {
+        width: 70vw;
+    }
+    
+
+    .ContainerMeriendas .GaleriaMeriendas .Meriendas .Ubicacion{
+        display: none;
+    }
+
+
+
+    #napule1 .puntuacion,
+    
+    #SanCarlos1 .puntuacion{
+        margin-left: 1%;
+    }
+
+
+
+    .Meriendas .puntuacion {
+        display: flex;
+        position: absolute;
+        align-items: start;
+        flex-direction: column;
+        height: 10vh;
+        
+        margin-left: 1%;
+        width: 20vw;
+    }
+
+    .ContainerMeriendas .GaleriaMeriendas .Meriendas  .puntuacion p{
         font-size: 15px;
         bottom: 120%;
     }
