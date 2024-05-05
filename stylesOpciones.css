@@ -598,7 +598,7 @@ input:hover {
     }
     
     .GaleriaResto .GaleriaRestaurantes div p {
-        margin-left: 10px;
+        margin-left: 10%;
         font-size: 10px;
         margin-top: 15%;
         position: relative;
@@ -606,7 +606,7 @@ input:hover {
     
     .GaleriaResto .GaleriaRestaurantes div h3 {
        
-        margin-bottom: 125px;
+        margin-bottom: 20%;
         position: absolute;
         margin-left: 1%;
         font-size: large;
@@ -618,6 +618,7 @@ input:hover {
     #napule img,
     #SanCarlos img {
         width: 70vw;
+        height: 15vh;
     }
     
     .ImagenUbicacion{
@@ -640,14 +641,14 @@ input:hover {
         align-items: start;
         flex-direction: column;
         height: 10vh;
-        margin-top: 9%;
+        margin-top: 10%;
         margin-left: 1%;
         width: 20vw;
     }
 
     .GaleriaResto .GaleriaRestaurantes .Restaurante  .puntuacion p{
         font-size: 15px;
-        bottom: 120%;
+        bottom: 135%;
     }
 
 
@@ -717,6 +718,7 @@ input:hover {
     #napule2 img,
     #SanCarlos2 img {
         width: 70vw;
+        height: 15vh;
     }
     
 
@@ -749,7 +751,7 @@ input:hover {
 
     .ContainerBares .GaleriaBares .Bares  .puntuacion p{
         font-size: 15px;
-        bottom: 120%;
+        bottom: 115%;
     }
 
 
@@ -814,6 +816,7 @@ input:hover {
     #napule1 img,
     #SanCarlos1 img {
         width: 70vw;
+        height: 15vh;
     }
     
 
