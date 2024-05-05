@@ -120,10 +120,11 @@ input:hover {
 }
 
 .Restaurante img {
-    width: 225px;
-    border-radius: 6px 0px 0px 6px;
 
-    height: 224px;
+    width:18vw;
+   /* width: 225px;*/
+    border-radius: 6px 0px 0px 6px;
+    height: 40vh;
 
 
 }
@@ -157,6 +158,7 @@ input:hover {
 #napule img,
 #SanCarlos img {
     width: 40vw;
+    height: 40vh;
 }
 
 #napule .puntuacion,
@@ -212,7 +214,6 @@ input:hover {
 #SanCarlos .Ubicacion img {
     width: 10vw;
     height: 15vh;
-    
 
 }
 
@@ -265,10 +266,10 @@ input:hover {
 }
 
 .Bares img {
-    width: 225px;
+    width:18vw;
+   /* width: 225px;*/
     border-radius: 6px 0px 0px 6px;
-
-    height: 224px;
+    height: 40vh;
 
 
 }
@@ -301,7 +302,10 @@ input:hover {
 #capitan1 img,
 #napule1 img,
 #SanCarlos1 img {
-    width: 40vw;
+    width:25vw;
+    /* width: 225px;*/
+     border-radius: 6px 0px 0px 6px;
+     height: 40vh;
 }
 
 #napule1 .puntuacion,
@@ -403,10 +407,10 @@ input:hover {
 }
 
 .Meriendas img {
-    width: 225px;
+    width:18vw;
+   /* width: 225px;*/
     border-radius: 6px 0px 0px 6px;
-
-    height: 224px;
+    height: 40vh;
 
 
 }
@@ -439,7 +443,10 @@ input:hover {
 #capitan2 img,
 #napule2 img,
 #SanCarlos2 img {
-    width: 40vw;
+    width:40vw;
+    /* width: 225px;*/
+     border-radius: 6px 0px 0px 6px;
+     height: 40vh;
 }
 
 #napule2 .puntuacion,
