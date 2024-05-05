@@ -146,9 +146,9 @@ input:hover {
 }
 
 .GaleriaResto .GaleriaRestaurantes div h3 {
-    margin-bottom: 125px;
+    margin-bottom: 10%;
     position: absolute;
-    margin-left: 250px;
+    margin-left: 20%;
     width: 190px;
 
 
@@ -178,7 +178,7 @@ input:hover {
     flex-direction: column;
 
     height: 10vh;
-    margin-bottom: 40px;
+    margin-bottom: 4%;
     margin-left: 17.8%;
     width: 20vw;
 }
@@ -291,9 +291,9 @@ input:hover {
 }
 
 .ContainerBares .GaleriaBares div h3 {
-    margin-bottom: 125px;
+    margin-bottom: 10%;
     position: absolute;
-    margin-left: 250px;
+    margin-left: 20%;
     width: 190px;
 
 
@@ -311,7 +311,7 @@ input:hover {
 #napule1 .puntuacion,
 #capitan1 .puntuacion,
 #SanCarlos1 .puntuacion {
-    margin-left: 250px;
+    margin-left: 17.8%;
     width: 31vw;
 }
 
@@ -432,9 +432,9 @@ input:hover {
 }
 
 .ContainerMeriendas .GaleriaMeriendas div h3 {
-    margin-bottom: 125px;
+    margin-bottom: 10%;
     position: absolute;
-    margin-left: 250px;
+    margin-left: 20%;
     width: 190px;
 
 
@@ -452,7 +452,7 @@ input:hover {
 #napule2 .puntuacion,
 #capitan2 .puntuacion,
 #SanCarlos2 .puntuacion {
-    margin-left: 250px;
+    margin-left: 17.8%;
     width: 31vw;
 }
 
