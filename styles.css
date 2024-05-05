@@ -327,6 +327,49 @@ h5{
 }
 
 
+/*.ContainerForm{
+    position: relative;
+    
+    
+    display: flex;
+    justify-content: center;
+    height: 50vh;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+.ContainerForm .Formulario{
+    margin-bottom: 7%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ContainerForm .Formulario form{
+    display: flex;
+    position: relative;
+    
+    flex-direction: column;
+    height: 30vh;
+    width: 20vw;
+    
+}
+
+form textarea{
+    margin-top: 15%;
+
+}
+
+form button{
+    margin-top: 15%;
+}
+
+form textarea{
+    height: 30vh;
+}*/
+
+
+
+
 /**************************************************************************************/
 /************************************* RESPONSIVE ************************************/
 /*************************************************************************************/
