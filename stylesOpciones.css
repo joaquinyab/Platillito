@@ -8,6 +8,12 @@ body {
     background: #253745;
 }
 
+#lista li::selection{
+    background: transparent;
+
+}
+
+
 
 
 
