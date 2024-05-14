@@ -1,5 +1,4 @@
 
-
 document.addEventListener('DOMContentLoaded',function(){
 
 
@@ -15,14 +14,15 @@ document.addEventListener('DOMContentLoaded',function(){
             
         }
         });
+})
 
 
 
-    const searchInput = document.getElementById('Filtrar')
-    const list = document.getElementById('lista').getElementsByTagName('li')
+const searchInput = document.getElementById('Filtrar')
+const list = document.getElementById('lista').getElementsByTagName('li')
 
 
-    searchInput.addEventListener('input',function(){
+searchInput.addEventListener('input',function(){
         const filtrar = searchInput.value.toUpperCase();
         for (let i=0;i<list.length; i++){
             const item = list[i];
@@ -34,6 +34,5 @@ document.addEventListener('DOMContentLoaded',function(){
                 item.style.display='none';
             }
         }
-    })
-
 })
+
