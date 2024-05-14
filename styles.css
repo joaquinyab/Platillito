@@ -11,6 +11,17 @@ body{
 
 
 
+#Icono{
+    display: none;
+}
+
+#MenuOculto{
+    display: none;
+}
+
+
+
+
 .NavigationBar{
     position: absolute;
     height: 12vh;
@@ -327,45 +338,6 @@ h5{
 }
 
 
-/*.ContainerForm{
-    position: relative;
-    
-    
-    display: flex;
-    justify-content: center;
-    height: 50vh;
-    flex-direction: column;
-    flex-wrap: nowrap;
-}
-.ContainerForm .Formulario{
-    margin-bottom: 7%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.ContainerForm .Formulario form{
-    display: flex;
-    position: relative;
-    
-    flex-direction: column;
-    height: 30vh;
-    width: 20vw;
-    
-}
-
-form textarea{
-    margin-top: 15%;
-
-}
-
-form button{
-    margin-top: 15%;
-}
-
-form textarea{
-    height: 30vh;
-}*/
 
 
 
@@ -376,8 +348,25 @@ form textarea{
 
 @media only screen and (max-width:800px){
 
+
+
+
+    .Menu{
+        display: none;
+        position: absolute;
+       
+        
+    }
+
+
+
+    #Icono{
+        display: flex;
+    }
+
     .Menu .OpcionRecomendar{
         display: none;
+
     }
 
     .TituloWeb{
@@ -385,8 +374,12 @@ form textarea{
         font-size: 50px;
     }
 
+
+
     .Menu li a{
         display: flex;
+        
+        
         text-decoration:underline;
         color: #CCD0CF;
         font-weight: bold;
