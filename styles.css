@@ -353,15 +353,17 @@ h5{
 
     .Menu{
         display: none;
-        position: absolute;
-       
-        
+        justify-content: center;
+        align-items: center;
     }
 
 
 
     #Icono{
-        display: flex;
+        display: block;
+        right: 10%;
+        text-decoration: wavy;
+        color: white;
     }
 
     .Menu .OpcionRecomendar{
@@ -378,20 +380,21 @@ h5{
 
     .Menu li a{
         display: flex;
-        
-        
         text-decoration:underline;
         color: #CCD0CF;
         font-weight: bold;
         padding: 5px;
+        
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
         font-size: 17px;
     }
 
     .NavigationBar{
+
         max-width: 100%;
         position: absolute;
-        height: 20vh;
+
+        height: 10vh;
         background: #06141B;
         align-content: center;  
     }

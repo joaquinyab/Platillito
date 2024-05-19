@@ -117,6 +117,11 @@ input:hover {
     width: 98.3vw;
 }
 
+.Restaurante:hover{
+    box-shadow: 15px 15px 15px rgba(255, 255, 255, 0.4);
+    transition: 0.6s;
+}
+
 
 .GaleriaResto .GaleriaRestaurantes {
     display: flex;
@@ -249,7 +254,10 @@ input:hover {
 /********************************************************************/
 
 
-
+.Bares:hover{
+    box-shadow: 15px 15px 15px rgba(255, 255, 255, 0.4);
+    transition: 0.6s;
+}
 
 
 
@@ -391,7 +399,10 @@ input:hover {
 /************************PAGINA DE MERIENDAS*************************/
 /********************************************************************/
 
-
+.Meriendas:hover{
+    box-shadow: 15px 15px 15px rgba(255, 255, 255, 0.4);
+    transition: 0.6s;
+}
 
 
 

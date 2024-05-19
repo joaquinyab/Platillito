@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded',function(){
             Menu.style.display = 'none';
         } else {
             Menu.style.display = 'flex';
+            
             Menu.style.flexDirection= 'row'
             
         }
