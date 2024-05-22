@@ -2,7 +2,7 @@
 document.addEventListener('DOMContentLoaded',function(){
 
 
-    let IconoMenu = document.getElementById('Icono');
+   let IconoMenu = document.getElementById('Icono');
     let Menu = document.querySelector('.Menu'); // Selecciona el primer elemento con la clase 'Menu'
 
     IconoMenu.addEventListener('click', function() {
@@ -34,6 +34,8 @@ searchInput.addEventListener('input',function(){
             }else{
                 item.style.display='none';
             }
+
+        
         }
 })
 
