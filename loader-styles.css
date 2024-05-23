@@ -2,6 +2,7 @@ body {
     margin: 0;
     padding: 0;
     overflow: hidden; /* Evita el scroll mientras el loader está visible */
+    background:#4A5C6A
 }
 
 .loader {
@@ -20,4 +21,17 @@ body {
 
 .loader img {
     width: 150px; /* Ajusta el tamaño del logo según tus necesidades */
+    filter: invert(1); /* Hace que el logo sea negro (inversión de colores) */
+    animation: spin 2s linear infinite; /* Aplica la animación de giro */
 }
+
+/* Animación de giro */
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
