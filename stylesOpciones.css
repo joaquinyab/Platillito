@@ -216,7 +216,7 @@ input:hover {
     position: relative;
     width: 20vw;
     display: flex;
-    margin-top: 120px;
+    margin-top: 20%;
     margin-right: 2px;
     height: 15vh;
  
@@ -226,26 +226,36 @@ input:hover {
 
 
 .GaleriaResto .GaleriaRestaurantes .Restaurante .Ubicacion img {
-    width: 10vw;
-    height: 15vh;
+    width: 5vw;
+    height: 8vh;
+    
     
 }
 
-.GaleriaResto .GaleriaRestaurantes .Restaurante .Ubicacion img:hover {
-    width: 12vw;
-    height: 17vh;
+.GaleriaResto .GaleriaRestaurantes .Restaurante .Ubicacion img:hover{
+    width: 6vw;
+    height: 9vh;
     transition: 1s;
-
 }
+
+
 
 #capitan .Ubicacion img,
 #napule .Ubicacion img,
 #SanCarlos .Ubicacion img {
-    width: 10vw;
-    height: 15vh;
+    width: 5vw;
+    height: 8vh;
 
 }
 
+
+#capitan .Ubicacion img:hover,
+#napule .Ubicacion img:hover,
+#SanCarlos .Ubicacion img:hover {
+    width: 6vw;
+    height: 9vh;
+
+}
 
 
 
@@ -366,7 +376,7 @@ input:hover {
     position: relative;
     width: 20vw;
     display: flex;
-    margin-top: 120px;
+    margin-top: 20%;
     margin-right: 2px;
     height: 15vh;
 
@@ -375,17 +385,17 @@ input:hover {
 
 
 .ContainerBares .GaleriaBares .Bares .Ubicacion img {
-    width: 10vw;
-    height: 15vh;
-    border-radius: 0;
+    width: 6vw;
+    height: 9vh;
+    transition: 1s;
 
 
 
 }
 
 .ContainerBares .GaleriaBares .Bares .Ubicacion img:hover {
-    width: 12vw;
-    height: 17vh;
+    width: 7vw;
+    height: 10vh;
     transition: 1s;
 
 }
@@ -393,13 +403,20 @@ input:hover {
 #capitan1 .Ubicacion img,
 #napule1 .Ubicacion img,
 #SanCarlos1 .Ubicacion img {
-    width: 10vw;
-    height: 15vh;
+    width: 6vw;
+    height: 9vh;
     border-radius: 0;
 
 }
 
+#capitan1 .Ubicacion:hover,
+#napule1 .Ubicacion:hover,
+#SanCarlos1 .Ubicacion:hover {
+    width: 7vw;
+    height: 10vh;
+    transition: 1s;
 
+}
 
 
 
