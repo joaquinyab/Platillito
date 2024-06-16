@@ -93,6 +93,8 @@ document.getElementById('submitReview').onclick = function(event) {
         // Puedes limpiar los campos del modal si es necesario
         document.getElementById('rating').value = '1';
         document.getElementById('comment').value = '';
+       
+
     } else {
         // Aquí puedes redirigir a otra página o realizar otra acción
         console.log("No se realizará otra reseña.");

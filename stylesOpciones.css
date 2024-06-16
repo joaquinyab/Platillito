@@ -4,8 +4,12 @@
 }
 
 
+.reviewButton{
+    top: 10%;
+}
 #btnReview{
     position: relative;
+    top: 2%;
     border: 2px 2px 2px 2px;
     width: 5vw;
     height: 5vh;
