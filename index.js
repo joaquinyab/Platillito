@@ -109,7 +109,3 @@ document.getElementById('submitReview').onclick = function(event) {
 
 
 
-
-
-
-
