@@ -48,5 +48,57 @@ searchInput.addEventListener('input',function(){
 
 
 
+// Obtener el modal
+var modal = document.getElementById("reviewModal");
+
+// Obtener el botón que abre el modal
+var reviewButtons = document.querySelectorAll(".reviewButton");
+
+// Obtener el <span> que cierra el modal
+var closeButton = modal.querySelector(".close");
+
+// Cuando el usuario haga clic en el botón, abrir el modal
+reviewButtons.forEach(button => {
+    button.onclick = function() {
+        modal.style.display = "block";
+    }
+});
+
+// Cuando el usuario haga clic en <span> (x), cerrar el modal
+closeButton.onclick = function() {
+    modal.style.display = "none";
+}
+
+// Cuando el usuario haga clic en cualquier lugar fuera del modal, cerrar el modal
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+
+// Manejar el envío de la reseña
+document.getElementById("submitReview").onclick = function() {
+    var rating = document.getElementById("rating").value;
+    var comment = document.getElementById("comment").value;
+    console.log("Puntuación: " + rating);
+    console.log("Comentario: " + comment);
+    
+    // Cerrar el modal
+    modal.style.display = "none";
+    
+    // Mostrar mensaje de confirmación
+    var confirmMessage = "¡Reseña enviada correctamente!";
+    window.confirm(confirmMessage);
+}
+
+
+
+
+
+
+
+
+
+
 
 
