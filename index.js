@@ -46,50 +46,59 @@ searchInput.addEventListener('input',function(){
 
 
 
+// Obtener el modal de reseñas
+var modal = document.getElementById('reviewModal');
 
-
-// Obtener el modal
-var modal = document.getElementById("reviewModal");
-
-// Obtener el botón que abre el modal
+// Obtener el botón que abre el modal de reseñas
 var reviewButtons = document.querySelectorAll(".reviewButton");
 
-// Obtener el <span> que cierra el modal
-var closeButton = modal.querySelector(".close");
+// Obtener el span de cierre del modal
+var span = document.getElementsByClassName("close")[0];
 
-// Cuando el usuario haga clic en el botón, abrir el modal
+// Cuando se hace clic en el botón de reseña, abrir el modal
 reviewButtons.forEach(button => {
-    button.onclick = function() {
+    button.addEventListener('click', function(event) {
+        event.preventDefault(); // Prevenir el comportamiento por defecto del enlace
         modal.style.display = "block";
-    }
+    });
 });
 
-// Cuando el usuario haga clic en <span> (x), cerrar el modal
-closeButton.onclick = function() {
+// Cuando se hace clic en el span de cierre, cerrar el modal
+span.onclick = function() {
     modal.style.display = "none";
 }
 
-// Cuando el usuario haga clic en cualquier lugar fuera del modal, cerrar el modal
+// Cuando se hace clic fuera del modal, cerrar el modal
 window.onclick = function(event) {
     if (event.target == modal) {
         modal.style.display = "none";
     }
 }
 
-// Manejar el envío de la reseña
-document.getElementById("submitReview").onclick = function() {
-    var rating = document.getElementById("rating").value;
-    var comment = document.getElementById("comment").value;
-    console.log("Puntuación: " + rating);
-    console.log("Comentario: " + comment);
-    
-    // Cerrar el modal
+// Cuando se hace clic en el botón de enviar reseña
+document.getElementById('submitReview').onclick = function(event) {
+    event.preventDefault(); // Prevenir el comportamiento por defecto del formulario
+    var rating = document.getElementById('rating').value;
+    var comment = document.getElementById('comment').value;
+
+    // Aquí puedes añadir la lógica para enviar la reseña, por ejemplo, enviarla a un servidor, guardarla en localStorage, etc.
+
+    // Cerrar el modal después de enviar la reseña
     modal.style.display = "none";
-    
-    // Mostrar mensaje de confirmación
-    var confirmMessage = "¡Reseña enviada correctamente!";
-    window.confirm(confirmMessage);
+
+    // Mostrar mensaje de confirmación (prompt)
+    var confirmation = confirm("¡Reseña enviada con éxito! ¿Quieres realizar otra reseña?");
+    if (confirmation) {
+        modal.style.display = "block"; // Mostrar de nuevo el modal para realizar otra reseña
+        // Puedes limpiar los campos del modal si es necesario
+        document.getElementById('rating').value = '1';
+        document.getElementById('comment').value = '';
+    } else {
+        // Aquí puedes redirigir a otra página o realizar otra acción
+        console.log("No se realizará otra reseña.");
+    }
 }
+
 
 
 
