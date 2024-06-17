@@ -20,7 +20,7 @@
 
     <div class="GaleriaResto">
         <div class="FiltrarDiv">
-            <input id='Filtrar' type="text" placeholder="Buscar por nombre o cantidad de estrellas">
+            <input id='Filtrar' type="text" placeholder="Buscar Restaurante">
         </div>
         <div class="GaleriaRestaurantes">
 
@@ -78,38 +78,6 @@
                                 class="reviewButton"></a>
 
                     </div>
-                </li>
-
-                <li>5
-
-                    <div class="Restaurante" id="capitan"><img src="Imagenes\Capitan.png" alt="">
-
-                        <h3>El capitan</h3>
-                        <p class="TextoRestos"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non aliquam
-                            architecto
-                            delectus iure
-                            corrupti perspiciatis similique provident repellat? Quae, provident voluptas. Earum aliquam
-                            vero vel
-                            cumque soluta est ab non!</p>
-
-                        <div class="puntuacion">
-                            <p>⭐⭐⭐⭐⭐</p>
-
-                        </div>
-                        <div class="Ubicacion"><a target="_blank"
-                                href="https://www.google.com/maps/place/Capit%C3%A1n/@-34.6238028,-58.4898442,13z/data=!4m10!1m2!2m1!1scapitan!3m6!1s0x95bcca130fb69e11:0x4425880cf6eab030!8m2!3d-34.6080063!4d-58.4426739!15sCgdjYXBpdGFuWgkiB2NhcGl0YW6SARZhcmdlbnRpbmlhbl9yZXN0YXVyYW504AEA!16s%2Fg%2F1tz774x2?entry=ttu"><img
-                                    class="ImagenUbicacion" src='Imagenes\image.png' alt=""></a>
-
-                        </div>
-                        <a href="" class="reviewButton"><img id="btnReviewcapitan" src="Iconos\resenia.png"
-                                alt="Reseñar"></a>
-
-
-
-
-
-                    </div>
-
                 </li>
 
 
@@ -238,17 +206,18 @@
             <h2>Hacer una Reseña</h2>
             <label for="rating">Puntuación:</label>
             <select id="rating">
-                <option value="1">1 estrella</option>
-                <option value="2">2 estrellas</option>
-                <option value="3">3 estrellas</option>
-                <option value="4">4 estrellas</option>
-                <option value="5">5 estrellas</option>
+                <option value="1">⭐</option>
+                <option value="2">⭐⭐</option>
+                <option value="3">⭐⭐⭐</option>
+                <option value="4">⭐⭐⭐⭐</option>
+                <option value="5">⭐⭐⭐⭐⭐</option>
             </select>
             <label for="comment">Comentario:</label>
             <textarea id="comment" rows="4" cols="50"></textarea>
             <button id="submitReview">Enviar Reseña</button>
         </div>
     </div>
+    
 
     <script src="index.js"></script>
 
