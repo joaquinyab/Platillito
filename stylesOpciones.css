@@ -4,24 +4,22 @@
 }
 
 .reviewButton{
-    border-radius: 0%;
+    
     position: relative;
     right: 65%;
+   
     top: 23%;
+    
  
 }
 
-.reviewButton #btnReview:hover{
-    width: 3.5vw;
-    height: 3.5vh;
-    transition: 1s;
-}
+
 
 #btnReview{
     
     top: 2%;
-    border: 2px 2px 2px 2px;
     width: 3vw;
+    
     height: 3vh;
 }
 
@@ -35,6 +33,26 @@
     height: 3vh;
 }
 
+
+
+#capitan #btnReviewcapitan:hover,
+#napule #btnReviewNapule:hover,
+#SanCarlos #btnReviewSanCarlos:hover{
+    position: relative;
+    border: 2px 2px 2px 2px;
+    width: 4vw;
+    height: 4vh;
+}
+
+
+.Meriendas #martinelli{
+    width: 42vw;
+}
+
+.Meriendas #swami{
+    width: 42vw;
+
+}
 
 #reviewButton {
     
@@ -703,7 +721,6 @@ input:hover {
 
 
 
-
 @media only screen and (max-width:600px){
 
 
@@ -819,7 +836,9 @@ input:hover {
     }
 
     input{
-        display: none;
+        position: relative;
+        margin-left: 35%;
+        width: 40vw;
     }
 
 
@@ -1006,6 +1025,66 @@ input:hover {
     .ContainerMeriendas .GaleriaMeriendas .Meriendas  .puntuacion p{
         font-size: 15px;
         bottom: 120%;
+    }
+
+
+
+    .reviewButton{
+        border-radius: 0%;
+        position: relative;
+        right: 65%;
+        top: 23%;
+     
+    }
+    
+    .reviewButton #btnReview:hover{
+        width: 3.5vw;
+        height: 3.5vh;
+        transition: 1s;
+    }
+    
+    #btnReview{
+        
+        top: 2%;
+        border: 2px 2px 2px 2px;
+        width: 3vw;
+        height: 3vh;
+    }
+    
+    
+    #capitan #btnReviewcapitan,
+    #napule #btnReviewNapule,
+    #SanCarlos #btnReviewSanCarlos{
+        position: relative;
+        border: 2px 2px 2px 2px;
+        width: 3vw;
+        height: 3vh;
+    }
+    
+    
+    #reviewButton {
+        
+        
+        height: 8vh;
+        width: 4vw;
+        cursor: pointer;
+        background-color: #253745;
+    }
+    #reviewButton #editar{
+        width: 3vw;
+    
+    }
+
+
+
+    .Meriendas #martinelli{
+        width: 70vw;
+
+    }
+    
+    .Meriendas #swami{
+        width: 70vw;
+    
     }
 
 
