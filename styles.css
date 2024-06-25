@@ -245,7 +245,7 @@ body{
 }
 
 #ContenedorSobreNosotros .ContainerTextoSobreNosotros .TextoSobreNosotros{
-    font-size: 20px;
+    font-size: 18px;
     text-align: justify;
 }
 
@@ -479,7 +479,7 @@ h5{
     }
     
     #ContenedorSobreNosotros .ContainerTextoSobreNosotros .TextoSobreNosotros{
-        font-size: 15px;
+        font-size: 12px;
         text-align: justify;
     }
 
